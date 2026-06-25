@@ -1,0 +1,380 @@
+:root {
+    --light-color: #f5f5f5;
+    --dark-color:#253031;
+    --text-font: "Montserrat", 'sans serif';
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+p,h1{
+    font-family: var(--text-font);
+}
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+body{
+    background-color:var(--light-color);
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    height: 20vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-size: 40px ;
+}
+main{
+    height: 100vh;
+    width:80%;
+}
+section{
+    height:auto;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonial-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.profile-container{
+    display: flex;
+}
+
+.testimonial-card--design1{
+    flex-direction: column;
+}
+
+#card-design1{
+    position: relative;
+    background-color: var(--dark-color);
+    border-radius: 1em;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 30px;
+    padding: 20px 25px;
+}
+#card-design1::after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 92%;
+    left: 60px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--dark-color);
+    transform: rotate(45deg);
+    border-bottom-right-radius: 5px ;
+}
+#card-design1 p{
+    color: var(--light-color);
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+.profile-container--design1{
+    padding-left: 22px;
+    gap: 10px;
+    justify-content: end;
+    width: 60%;
+    height: 25%;
+}
+.profile-container--design1 .profile-img{
+    aspect-ratio: 1/1;
+}
+.profile-container--design1 .profile-img img{
+    border: 3px solid var(--dark-color);
+    scale: .9;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-container--design1 .profile-name{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile-container--design1 .profile-name p:nth-child(1){
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.profile-container--design1 .profile-name p:nth-child(2){
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+#card-design2{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1em;
+    height: 80%;
+    width: 55%;
+    border: var(--dark-color) solid 2px;
+}
+#card-design2-p{
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.profile-container--design2{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 35%;
+    width: 100%;
+}
+.profile-container--design2 .profile-img{
+    aspect-ratio: 1/1;
+}
+.profile-container--design2 .profile-img img{
+    border: 3px var(--dark-color) solid;
+    scale: .8;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-container--design2 .profile-name{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.profile-container--design2 .profile-name p:nth-child(1){
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.profile-container--design2 .profile-name p:nth-child(2){
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.testimonial-card--design3{
+    gap: 10px;
+}
+.card-design3{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    padding: 30px;
+}
+.profile-container--design3{
+    width: 35%;
+    height: 60%;
+    border-radius: 15px;
+}
+.profile-container--design3 .profile-img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.profile-container--design3 .profile-img img{
+    border: 5px solid var(--dark-color);
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-design3 p{
+    color: #F5F5F5;
+}
+.card-design3--stars{
+    gap: 5px;
+    display: flex;
+    width: 100%;
+    height: 12%;
+    margin-bottom: 10px;
+}
+.card-design3 .profile-name{
+    margin-bottom: 10px;
+    
+}
+.card-design3 .profile-name p:nth-child(1){
+    font-size: 1.8rem;
+    font-weight:500;
+}
+.card-design3 .profile-name p:nth-child(2){
+    font-size: .9rem;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.card-design3--comment{
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 20px;
+}
+
+.testimonial-card--design4{
+    flex-direction: column;
+}
+.card-design4{
+    margin-top: 10%;
+    position: relative;
+    border: 2px solid var(--dark-color);
+    width: 35%;
+    height: 75%;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.2rem;
+    color: var(--dark-color);
+}
+
+.card-design4 .profile-img{
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 40%;
+    border-radius: 50%;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.card-design4 .profile-img img{
+    border: 2px solid #253031;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+.card-design4--comment{
+    height: 70%;
+    width: 100%;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-style: italic;
+}
+.profile-container--design4{
+    height: 30%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column ;
+}
+.card-design-4--stars{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px;
+}
+
+.profile-container--design4 .profile-name{
+    height: 60%;
+    width: 100%;
+}
+.profile-container--design4 .profile-name p:nth-child(1){
+    font-weight: 600;
+}
+.profile-container--design4 .profile-name p:nth-child(2){
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.testimonial-card--design5{
+    flex-direction: column;
+}
+.card-design-5{
+    width: 75%;
+    height: 90%;
+    border: 3px solid var(--dark-color);
+    color: var(--dark-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+.card-design-5--comment{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    height: 50%;
+    width: 80%;
+}
+.card-design-5--comment p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.profile-container--design5{
+    position: relative;
+     height: 50%;
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+}
+.profile-container--design5 .buttons-container{
+    border: 1px sol;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+}
+.prev, .next{
+    object-fit: contain;
+    cursor: pointer;
+}
+.profile-container--design5 .profile-name p{
+    font-weight: 500;
+}
+.profile-container--design5 .profile-img{
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 50%;
+}
+.profile-container--design5 .profile-img img{
+    object-fit: contain;
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+
+}
+.profile-container--design5 .profile-img img:nth-child(1), .profile-container--design5 .profile-img img:nth-child(3){
+    scale: .8;
+    filter: blur(1px);
+    opacity: .8;
+}
+
+
